@@ -1,0 +1,13 @@
+.qodo
+venv/
+__pycache__/
+*.pyc
+.env
+*.json
+*.log
+*.db
+*.csv
+*.png
+*.xlsx
+*.xls
+*.pyd
