@@ -79,7 +79,6 @@ async def oauth_callback(
             )
 
         token_response = response.json()
-        print(token_response)
         access_token = token_response.get("access_token")
 
         user_headers = {"Authorization": f"Bearer {access_token}"}

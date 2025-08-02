@@ -1,5 +1,13 @@
+from dataclasses import dataclass
 import secrets
-from app.models.models import OAuthSession
+
+
+@dataclass
+class OAuthSession:
+    provider: str
+    state: str
+    start_time: float
+
 
 sessions = {}
 
