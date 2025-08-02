@@ -1,17 +1,12 @@
-import csv
 import logging
-import os
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import JSONResponse, RedirectResponse
 from app.auth.sessions import generate_state, store_session, get_session
-from app.database.database import get_db
 from app.utils.save_to_gsheet import save_to_google_sheet
 from app.utils.timing import measure_api_call
 from app.config import OAUTH_CONFIGS, get_oauth_config
 import time, datetime, httpx
 from urllib.parse import urlencode
-from fastapi import Depends
-from sqlalchemy.orm import Session
 
 router = APIRouter()
 CSV_FILE = OAUTH_CONFIGS["csv_file"]
