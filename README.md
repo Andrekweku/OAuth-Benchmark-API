@@ -79,7 +79,7 @@ CSV_FILE=benchmark_results.csv
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/Andrekweku/OAuth-Benchmark-API/tree/main
    cd oauth-benchmark-api
    ```
 
