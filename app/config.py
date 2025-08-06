@@ -15,6 +15,9 @@ relative_cred_path = os.getenv("GOOGLE_CREDENTIALS_FILE")
 GOOGLE_CREDENTIALS_FILE = os.path.join(base_dir, relative_cred_path)
 GOOGLE_SHEET_NAME = os.getenv("GOOGLE_SHEET_NAME")
 
+ALLOWED_ORIGINS_1 = os.getenv("ALLOWED_ORIGINS_1")
+ALLOWED_ORIGINS_2 = os.getenv("ALLOWED_ORIGINS_2")
+
 # Print to verify
 print("Using Google Credentials File:", GOOGLE_CREDENTIALS_FILE)
 
